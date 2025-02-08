@@ -1,12 +1,7 @@
-const { defineConfig } = require('vite');
+// vite.config.js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-module.exports = defineConfig({
-  css: {
-    postcss: {
-      plugins: [
-        require("tailwindcss"),
-        require("autoprefixer"),
-      ],
-    },
-  },
+export default defineConfig({
+  plugins: [react()],
 });

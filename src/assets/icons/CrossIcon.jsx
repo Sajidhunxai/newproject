@@ -1,6 +1,6 @@
 import React from "react";
 
-const CrossIcon = () => {
+const CrossIcon = ({stroke}) => {
   return (
     <svg
       width="11"
@@ -11,7 +11,7 @@ const CrossIcon = () => {
     >
       <path
         d="M10 1L1 10M1 1L10 10"
-        stroke="white"
+        stroke={stroke}
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
